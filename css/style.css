@@ -1,0 +1,99 @@
+/*
+Colors used:
+Pure White: #ffffff;
+Pistachio Cream: #b9d3b0;
+Mermaid Green: #81bda4;
+Chocolate Mousse: #b28774;
+Coral Lips: #f88f79;
+Peachy Keen: #f6aa93;
+Text Color: #2b2a2a;
+*/
+
+body {
+  background-color:#ffffff;
+  font-family: 'Baskerville', sans-serif
+  font-size: 16px;
+  font-weight: 400;
+  line-weight: 1.25;
+  color:#2b2a2a;
+
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 3.052em;
+  font-weight: 400;
+}
+
+h2{
+  font-size: 2.441em;
+  font-size: 400;
+}
+
+h3 {
+  font-size: 1.953em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.563em;
+  font-weight: 400;
+}
+
+img{
+  width: 100%
+}
+
+a {
+  color: #b9d3b0;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #b28774;
+}
+
+a:hover,
+a:focus {
+  color: #81bda4;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #f88f79;
+}
+
+.button {
+  display: inline-block;
+  background-color: #b9d3b0;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #b28774;
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity:0.8;
+  text-decoration: none;
+}
+
+.button:active {
+  background-color: #f6aa93;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #f88f79;
+  text-transform: uppercase;
+  border: 2px solid #f88f79;
+}
+
+.button.contact:hover {
+  background-color: #f88f79;
+  color: #ffffff;
+}

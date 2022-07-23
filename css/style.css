@@ -9,12 +9,80 @@ Peachy Keen: #f6aa93;
 Text Color: #2b2a2a;
 */
 
+*{
+  box-sizing: border-box;
+}
+
+header{
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  -webkit-box-shadow: 7px 7px 18px 0px rgba(50, 50, 50, 0.7);
+-moz-box-shadow:    7px 7px 18px 0px rgba(50, 50, 50, 0.7);
+box-shadow:         7px 7px 18px 0px rgba(50, 50, 50, 0.7);
+}
+
+.logo{
+  max-width: 250px;
+}
+
+nav{
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li{
+  display: inline-block;
+}
+
+nav > ul > li > a{
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #2b2a2a;
+}
+
+nav > ul > li > a:visited{
+  color: #2b2a2a;
+}
+
+nav > ul > li > a:hover{
+  color: #f6aa93;
+}
+
+nav > ul > li > a:active{
+  color: #f88f79;
+}
+
+#hero span{
+  text-align: center;
+}
+
+#hero{
+  background-color: #ffffff;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+
+main{
+  padding-top: 133px;
+}
+
 body {
   background-color:#ffffff;
-  font-family: 'Baskerville', sans-serif
+  font-family: 'Baskerville', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-weight: 1.25;
+  line-height: 1.25;
   color:#2b2a2a;
 
 }
@@ -96,4 +164,53 @@ a:active {
 .button.contact:hover {
   background-color: #f88f79;
   color: #ffffff;
+}
+
+#social {
+  width: 5%;
+}
+
+#social > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#social > ul > li {
+  display: inline-block;
+}
+
+#social > ul > li > a {
+  padding: 0 20px;
+  text-align: center;
+}
+
+.sakura {
+  width: 10%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Layout styling */
+
+.container{
+  padding: 0 15px;
+}
+
+.row{
+  margin: 25px 0; /*25px top and bottom, 0 left and right */
+}
+
+#work .row{
+  padding-bottom: 25px;
+  border-bottom: 1px solid #b28774;
+}
+
+#main h1{
+  text-align: center; /* Centers text */
+}
+
+footer {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px 0px;
 }

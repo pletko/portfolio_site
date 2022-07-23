@@ -166,24 +166,6 @@ a:active {
   color: #ffffff;
 }
 
-#social {
-  width: 5%;
-}
-
-#social > ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-#social > ul > li {
-  display: inline-block;
-}
-
-#social > ul > li > a {
-  padding: 0 20px;
-  text-align: center;
-}
-
 .sakura {
   width: 10%;
   text-align: center;
@@ -213,4 +195,22 @@ footer {
   background-color: #ffffff;
   text-align: center;
   padding: 10px 0px;
+}
+
+.social {
+  width: 5%;
+  text-align: center;
+}
+
+.social > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social > ul > li {
+  display: inline-block;
+}
+
+.social > ul > li > a {
+  padding: 0 20px;
 }

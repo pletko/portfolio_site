@@ -143,7 +143,7 @@ p {
   font-family: 'Gill Sans', sans-serif;
   font-size: 16px;
   font-weight: normal;
-  line-height: normal;
+  line-height: 1.25;
   color: #2b2a2a;
 }
 
@@ -176,14 +176,14 @@ a:active {
   color: #ffffff;
   font-family: 'Gill Sans', sans-serif;
   font-weight: 400;
+  margin-top: 20px;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #b28774;
   transition: 0.2s opacity;
 }
 
 .button:hover {
-  opacity:0.8;
+  opacity: 0.8;
   text-decoration: none;
 }
 
@@ -203,7 +203,31 @@ a:active {
   color: #ffffff;
 }
 
+
 /* Layout styling */
+.container{
+  padding: 0 15px;
+}
+
+.row{
+  margin: 25px 0; /*25px top and bottom, 0 left and right */
+}
+
+#work .row{
+  padding-bottom: 25px;
+
+}
+
+#main h1{
+  text-align: center; /* Centers text */
+}
+
+footer {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px 0px;
+}
+
 .sakura {
   display: inline-block;
   text-align: center;
@@ -216,29 +240,6 @@ a:active {
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 45%;
-}
-
-.container{
-  padding: 0 15px;
-}
-
-.row{
-  margin: 25px 0; /*25px top and bottom, 0 left and right */
-}
-
-#work .row{
-  padding-bottom: 25px;
-  border-bottom: 1px solid #b28774;
-}
-
-#main h1{
-  text-align: center; /* Centers text */
-}
-
-footer {
-  background-color: #ffffff;
-  text-align: center;
-  padding: 10px 0px;
 }
 
 .cls-1 {
@@ -266,4 +267,161 @@ footer {
 .social svg {
   height: 32px;
   width: 32px;
+}
+
+.berlin-illustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation-duration: 34s;
+  animation-name: cloud-move-reverse;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+/* responsive sizing */
+
+/* medium devices (640px and larger)*/
+@media only screen and (min-width: 640px) {
+
+  header {
+    text-align: unset;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  main {
+    padding-top: 99px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+#hero {
+  text-align: center;
+}
+
+#hero span {
+  display: block;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+[class*="col-"] {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.row: :after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#about-page h4 {
+  margin-top: 0;
+}
+
+
+}
+
+/* large devices (1024px or larger) */
+@media only screen and (min-width: 1024px) {
+
+  [class*="col-"] {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .col-lg-7{
+    width: 58.33%;
+  }
+
+  .col-lg-5{
+    width: 41.66%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+/* x-large devices (1440px or larger) */
+@media only screen and (min-width: 1440px) {
+
+  [class*="col-"] {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+/* xx-large devices (1920px or larger) */
+@media only screen and (min-width: 1920px) {
+
+  [class*="col-"] {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }

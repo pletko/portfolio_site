@@ -354,7 +354,7 @@ footer {
   padding-right: 10px;
 }
 
-.row: :after {
+.row::after {
   content: "";
   clear: both;
   display: table;
@@ -365,16 +365,20 @@ footer {
 }
 
 
+[class*="col-"] {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* large devices (1024px or larger) */
 @media only screen and (min-width: 1024px) {
-
-  [class*="col-"] {
-    float: left;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
 
   .col-lg-7{
     width: 58.33%;
@@ -384,44 +388,16 @@ footer {
     width: 41.66%;
   }
 
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
 }
 
 /* x-large devices (1440px or larger) */
 @media only screen and (min-width: 1440px) {
 
-  [class*="col-"] {
-    float: left;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
 
 }
 
 /* xx-large devices (1920px or larger) */
 @media only screen and (min-width: 1920px) {
 
-  [class*="col-"] {
-    float: left;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
 
 }

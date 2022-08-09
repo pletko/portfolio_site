@@ -15,8 +15,7 @@ Text Color: #2b2a2a;
 
 header{
   background-color: #ffffff;
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   position: fixed;
   width: 100%;
   -webkit-box-shadow: 7px 7px 18px 0px rgba(50, 50, 50, 0.7);
@@ -25,12 +24,10 @@ box-shadow:         7px 7px 18px 0px rgba(50, 50, 50, 0.7);
 }
 
 .logo{
-  max-width: 250px;
+  max-width: 150px;
 }
 
 nav{
-  display: inline-block;
-  width: 100%;
   font-family: 'Gill Sans', sans-serif;
   font-size: 16px;
   font-weight: normal;
@@ -38,13 +35,41 @@ nav{
   color: #2b2a2a;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+
+
+
 nav > ul{
   list-style-type: none;
   padding: 0;
-}
-
-nav > ul > li{
-  display: inline-block;
+  margin: 0;
 }
 
 nav > ul > li > a{
@@ -88,7 +113,7 @@ span {
 
 
 main{
-  padding-top: 133px;
+  padding-top: 56px;
 }
 
 body {
@@ -316,16 +341,32 @@ footer {
 /* responsive sizing */
 
 /* medium devices (640px and larger)*/
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
 
-  header {
-    text-align: unset;
+  .logo {
+    max-width: 250px;
   }
 
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
+  }
+
+  nav > ul > li{
+    display: inline-block;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 
   main {

@@ -138,6 +138,7 @@ h1 {
 h2{
   font-size: 2.441em;
   font-weight: 600;
+  text-align: center;
 }
 
 h2.pink {
@@ -182,12 +183,12 @@ a {
 }
 
 a:visited {
-  color: #b28774;
+  color: #ffffff;
 }
 
 a:hover,
 a:focus {
-  color: #81bda4;
+  color: #ffffff;
   text-decoration: underline;
 }
 
@@ -210,6 +211,7 @@ a:active {
 .button:hover {
   opacity: 0.8;
   text-decoration: none;
+  background-color: #f88f79;
 }
 
 .button:active {

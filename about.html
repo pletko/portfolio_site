@@ -13,6 +13,14 @@
   <!-- fonts: gill sans and baskerville -->
   <link rel="stylesheet" href="https://use.typekit.net/hdg8ahh.css">
   <link rel="stylesheet" href="https://use.typekit.net/hdg8ahh.css">
+  <link href="img/favicon/favicon.ico" rel="shortcut icon"><!-- not working in Safari but works in Chrome -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <body id="about-page">
@@ -21,12 +29,14 @@
     <div class="container">
       <div class="navtoggle" id="myNavtoggle">
       <!-- logo -->
+      <a href="index.html">
       <img src="img/logo3.png" alt="Logo" class="logo">
+    </a>
       <nav>
-        <ul>
+        <ul class="navigation">
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+          <li><a href="files/filler_resume.pdf" target="_blank">Resume</a></li>
           <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()">
           <i class="fas fa-bars"></i></a></li>
         </ul>
@@ -89,6 +99,7 @@
         </div><!-- row for column end -->
       </div><!-- container/wrapper end -->
     </div><!-- whole section end -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#127833</button> <!-- scroll to top button -->
   </main>
 
   <footer id="contact">
@@ -102,7 +113,7 @@
       </div>
       <h2>Get in Touch</h2>
       <div>
-        <p>Want to get in touch? Give me a call: <a href="tel:+123456789">+123456789</a> or send me an email.</p>
+        <p>Want to get in touch? Send me an email.</p>
       </div>
       <div class="container">
         <!-- button container start -->

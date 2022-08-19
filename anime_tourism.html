@@ -13,6 +13,14 @@
   <!-- fonts: gill sans and baskerville -->
   <link rel="stylesheet" href="https://use.typekit.net/hdg8ahh.css">
   <link rel="stylesheet" href="https://use.typekit.net/hdg8ahh.css">
+  <link href="img/favicon/favicon.ico" rel="shortcut icon"><!-- not working in Safari but works in Chrome -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -21,12 +29,14 @@
     <div class="container">
         <div class="navtoggle" id="myNavtoggle">
       <!-- logo -->
+      <a href="index.html">
       <img src="img/logo3.png" alt="Logo" class="logo">
+    </a>
       <nav>
-        <ul>
+        <ul class="navigation">
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+          <li><a href="files/filler_resume.pdf" target="_blank">Resume</a></li>
           <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()">
           <i class="fas fa-bars"></i></a></li>
         </ul>
@@ -45,14 +55,14 @@
       <div><!-- project wrapper start -->
         <div><!-- overview container start -->
           <picture>
-            <source srcset="img/anime_tourism.jpg" media="(max-width:767px)">
-              <img src="img/anime_tourism.jpg" alt="Anime Tourism Project">
+            <source srcset="img/anime_tourism.png" media="(max-width:767px)">
+              <img src="img/anime_tourism.png" alt="Anime Tourism Project">
           </picture>
           <p>In 2021, Netflix reported that half of its users chose to watch anime titles.
-            For many anime fans, traveling to Japan and visiting locations inspired by or seen in their favorite anime is a dream come true, especially since Japan closed to foreign tourists amidst the 2020 pandemic.
-            This presents a huge opportunity for anime tourism, an online resource for anime fans to travel and experience Japanese culture.</p>
+            For many anime fans, traveling to Japan and visiting locations inspired by or seen in their favorite anime is a dream come true, especially since Japan closed to foreign tourists amidst the 2020 pandemic.</p>
+            <p class=boldText>This presents a huge opportunity for Anime Tourism, an online resource for anime fans to travel and experience Japanese culture.</p>
           <h4>Purpose:
-          <span>A conceptual responsive redesign of Anime Tourism 88 for CareerFoundry.</span>
+          <span>A conceptual responsive redesign of <a id="animeLink" href="https://animetourism88.com/en/88AnimeSpot" target="_blank">Anime Tourism 88</a> for CareerFoundry.</span>
           </h4>
           <h4>My Role:
           <span>UX Researcher, UX/UI Designer</span>
@@ -75,7 +85,7 @@
           <h3 class="projectPink">Research</h3>
           <div class="container"><!-- user interviews container start -->
             <h4>User Interviews</h4>
-            <p>User research began with user interviews involving eleven participants.</p>
+            <p>User research began with user interviews involving 11 participants. While 5 participants are minimum recommended by NNgroup, I wanted extra practice with user interviews, especially since I had a larger group of interested partcipants.</p>
             <picture>
               <source srcset="img/user_interviews.png" media="(max-width:767px)">
               <img src="img/user_interviews.png" alt="User Interviews Image">
@@ -123,14 +133,6 @@
             <img src="img/final_screens.png" alt="Final Mobile Screens Image">
           </picture>
         </div><!-- design container end -->
-        <div class="container"><!-- prototype container start -->
-          <h3 class="projectPink">Prototype</h3>
-          <p>Here's a walkthrough of the Anime Tourism site on mobile.</p>
-          <picture>
-            <source srcset="https://via.placeholder.com/600x400" media="(max-width:767px)">
-            <img src="https://via.placeholder.com/1200x800" alt="Prototype">
-          </picture>
-        </div><!-- protoype container end -->
         </div><!-- process container end -->
         <div class="container"><!-- conclusion container start -->
           <h2 class="projectBlack">Conclusion</h2>
@@ -147,6 +149,7 @@
         </div><!-- conclusion container end -->
       </div><!-- project wrapper end -->
     </div><!-- project block end -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#127833</button> <!-- scroll to top button -->
   </main>
 
   <footer id="contact">
@@ -159,7 +162,7 @@
       </div>
       <h2>Get in Touch</h2>
       <div>
-        <p>Want to get in touch? Give me a call: <a href="tel:+123456789">+123456789</a> or send me an email.</p>
+        <p>Want to get in touch? Send me an email.</p>
       </div>
       <div class="container">
         <!-- button container start -->

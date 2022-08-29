@@ -1,12 +1,13 @@
 /*
 Colors used:
 Pure White: #ffffff;
-Mountain Snow Shadow: #CDC4E0;
+Dark Background: #474747;
+Peachy Keen: #f6aa93;
 Water: #9EAFCF;
+Mountain Snow Shadow: #CDC4E0;
 Mountain Main: #9F9DC5;
 Mountain Shadow: #9193B7;
 Coral Lips: #f88f79;
-Peachy Keen: #f6aa93;
 Text Color: #2b2a2a;
 */
 * {
@@ -18,14 +19,14 @@ html {
 }
 
 header {
-  background-color: #ffffff;
+  background-color: #474747;
   padding: 10px 0 4px;
   position: fixed;
   z-index: 999;
   width: 100%;
-  -webkit-box-shadow: 7px 7px 18px 0px rgba(50, 50, 50, 0.7);
-  -moz-box-shadow: 7px 7px 18px 0px rgba(50, 50, 50, 0.7);
-  box-shadow: 7px 7px 18px 0px rgba(50, 50, 50, 0.7);
+  -webkit-box-shadow: 7px 7px 18px rgba(50, 50, 50, 0.7);
+  -moz-box-shadow: 7px 7px 18px rgba(50, 50, 50, 0.7);
+  box-shadow: 7px 7px 18px rgba(50, 50, 50, 0.7);
 }
 
 .logo {
@@ -37,14 +38,18 @@ nav {
   font-size: 16px;
   font-weight: normal;
   line-height: normal;
-  color: #2b2a2a;
+  color: #fff;
 }
 
 .navtoggle li:not(:last-child) {
   display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle {
+  position: relative;
+}
+
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -69,29 +74,29 @@ nav {
   padding: 0 0 10px;
 }
 
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav>ul>li>a {
+nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 600;
-  color: #2b2a2a;
+  color: #fff;
 }
 
-nav>ul>li>a:visited {
-  color: #2b2a2a;
+nav > ul > li > a:visited {
+  color: #fff;
 }
 
-nav>ul>li>a:hover {
+nav > ul > li > a:hover {
   color: #f6aa93;
 }
 
-nav>ul>li>a:active {
-  color: #CDC4E0;
+nav > ul > li > a:active {
+  color: #cdc4e0;
 }
 
 span {
@@ -100,7 +105,7 @@ span {
   font-size: 16px;
   font-weight: normal;
   line-height: normal;
-  color: #2b2a2a;
+  color: #fff;
 }
 
 .hero-container {
@@ -113,7 +118,7 @@ span {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 /*
@@ -129,7 +134,6 @@ span {
   text-align: center;
 }
 */
-
 main {
   padding-top: 51px;
 }
@@ -139,28 +143,24 @@ main {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #474747;
   font-family: 'Gill Sans', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.25;
-  color: #2b2a2a;
+  color: #fff;
 }
 
 #myBtn {
-  position: fixed;
-  /*fixed/sticky position */
-  bottom: 20px;
-  /*place the button at the bottom of the page */
+  position: fixed;/* fixed/sticky position */
+  bottom: 20px;/* place the button at the bottom of the page */
   right: 30px;
-  z-index: 99;
-  /* Make sure it does not overlap */
+  z-index: 99;/* Make sure it does not overlap */
   border: none;
   outline: none;
-  background-color: #9EAFCF;
+  background-color: #9eafcf;
   color: white;
-  cursor: pointer;
-  /* add a mouse pointer on hover */
+  cursor: pointer;/* add a mouse pointer on hover */
   padding: 10px;
   border-radius: 5px;
   font-size: 20px;
@@ -170,24 +170,24 @@ body {
   background-color: #f6aa93;
 }
 
-h1, h2, h3, h4 {
-  line-height: 1.25;
-}
-
 h1 {
-  font-size: 3.0em;
+  color: #fff;
+  font-size: 3em;
   font-weight: 300;
+  line-height: 1.25;
 }
 
 h2 {
   font-size: 2.441em;
   font-weight: 300;
   text-align: center;
+  line-height: 1.25;
 }
 
 h2.pink {
-  color: #f88f79;
+  color: #f6aa93;
   text-align: left;
+  font-weight: 400;
 }
 
 h2.projectBlack {
@@ -197,17 +197,19 @@ h2.projectBlack {
 h3 {
   font-size: 1.953em;
   font-weight: 300;
+  line-height: 1.25;
 }
 
 h3.projectPink {
   color: #f88f79;
+  font-weight: 400;
 }
 
 h4 {
-  font-family: 'Gill Sans', sans-serif;
   font-size: 1.563em;
-  font-weight: 300;
-  color: #81bda4;
+  font-weight: 400;
+  line-height: 1.25;
+  color: #9eafcf;
 }
 
 /*
@@ -219,10 +221,10 @@ p {
   color: #2b2a2a;
 }
 */
-
 img {
-  width: 100%
+  width: 100%;
 }
+
 /*
 #animeLink a {
   color: #f88f79;
@@ -240,7 +242,6 @@ img {
   color: #f88f79;
 }
 */
-
 a {
   color: #f88f79;
   text-decoration: none;
@@ -252,18 +253,18 @@ a:visited {
 
 a:hover,
 a:focus {
-  color: #9F9DC5;
+  color: #9f9dc5;
   text-decoration: underline;
 }
 
 a:active {
-  color: #CDC4E0;
+  color: #cdc4e0;
 }
 
 .button {
   display: inline-block;
-  background-color:  #9EAFCF;
-  color: #ffffff;
+  background-color: #9eafcf;
+  color: #fff;
   font-family: 'Gill Sans', sans-serif;
   font-weight: 400;
   margin-top: 20px;
@@ -273,30 +274,29 @@ a:active {
 }
 
 .button:visited {
-  color: #ffffff;
+  color: #fff;
 }
 
 .button:hover {
-  opacity: 0.8;
   text-decoration: none;
-  background-color: #f88f79;
+  background-color: #f6aa93;
 }
 
 .button:active {
   background-color: #f6aa93;
-  color: #ffffff;
+  color: #fff;
 }
 
 .button.contact {
   background-color: transparent;
-  color: #f88f79;
+  color: #f6aa93;
   text-transform: uppercase;
-  border: 2px solid #f88f79;
+  border: 2px solid #f6aa93;
 }
 
 .button.contact:hover {
-  background-color: #f88f79;
-  color: #ffffff;
+  background-color: #f6aa93;
+  color: #fff;
 }
 
 /* Layout styling */
@@ -305,8 +305,7 @@ a:active {
 }
 
 .row {
-  margin: 25px 0;
-  /*25px top and bottom, 0 left and right */
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 
 #work .row {
@@ -315,18 +314,23 @@ a:active {
 
 #main h1 {
   text-align: center;
-  font-size: 2.0em;
-  line-height: .25;
+  font-size: 2em;
+  line-height: 0.25;
+}
+
+.hero-text {
+  color: #2b2a2a;
 }
 
 #main span {
+  color: #2b2a2a;
   font-size: 12px;
 }
 
 footer {
-  background-color: #ffffff;
+  background-color: ##474747;
   text-align: center;
-  padding: 10px 0px;
+  padding: 10px;
 }
 
 .sakura {
@@ -375,14 +379,13 @@ footer {
   position: relative;
 }
 */
-
 @keyframes moon-move {
   from {
     transform: translate(50px, 200px);
   }
 
   to {
-    transform: translate(50px, 0px);
+    transform: translate(50px, 1px);
   }
 }
 
@@ -400,7 +403,7 @@ footer {
   }
 
   to {
-    transform: translate(0px, 25px);
+    transform: translate(1px, 25px);
   }
 }
 
@@ -413,7 +416,9 @@ footer {
 }
 
 /* responsive sizing */
-/* medium devices (640px and larger)*/
+
+/* medium devices (640px and larger) */
+
 @media only screen and (min-width: 641px) {
   .logo {
     max-width: 250px;
@@ -425,11 +430,11 @@ footer {
     margin-top: 4px;
   }
 
-  nav>ul>li {
+  nav > ul > li {
     display: inline-block;
   }
 
-  nav>ul {
+  nav > ul {
     margin: 1em 0;
   }
 
@@ -446,29 +451,29 @@ footer {
   }
 
   h1 {
-  font-size: 50px;
-  font-weight: 300;
-  line-height: .25;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 0.25;
   }
 
   h2 {
-  font-size: 40px;
-  font-weight: 300;
-  text-align: center;
-}
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+  }
 
-h3 {
-  font-size: 36px;
-  font-weight: 300;
-  line-height: .50;
-}
+  h3 {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 0.5;
+  }
 
-h4 {
-  font-family: 'Gill Sans', sans-serif;
-  font-size: 30px;
-  font-weight: 300;
-  color: #9193B7;
-}
+  h4 {
+    font-family: 'Gill Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    color: #9193b7;
+  }
 
   p {
     font-size: 18px;
@@ -483,13 +488,14 @@ h4 {
     text-align: center;
     font-size: 50px;
     font-weight: 300;
-    line-height: .25;
+    line-height: 0.25;
   }
 
   #main span {
     font-size: 18px;
   }
-/*
+
+  /*
   #hero {
     text-align: center;
   }
@@ -498,7 +504,6 @@ h4 {
     display: block;
   }
   */
-
   .col-md-6 {
     width: 50%;
   }
@@ -530,88 +535,90 @@ h4 {
     margin-left: auto;
     margin-right: auto;
   }
+}
 
-  /* large devices (1024px or larger) */
-  @media only screen and (min-width: 1024px) {
-    button#myBtn {
-      font-size: 26px;
-    }
-
-    main {
-      padding-top: 72px;
-    }
-
-    #main h1 {
-      text-align: center;
-      font-size: 66px;
-      font-weight: 300;
-      line-height: .25;
-    }
-
-    #main span {
-      font-size: 24px;
-    }
-
-    .profilePic {
-      position: relative;
-      float: right;
-    } /* not working yet about page image */
-
-    .col-lg-7 {
-      width: 58.33%;
-    }
-
-    .col-lg-5 {
-      width: 41.66%;
-    }
+/* large devices (1024px or larger) */
+@media only screen and (min-width: 1024px) {
+  button#myBtn {
+    font-size: 26px;
   }
 
-  /* x-large devices (1440px or larger) */
-  @media only screen and (min-width: 1440px) {
+  main {
+    padding-top: 72px;
+  }
+
+  #main h1 {
+    text-align: center;
+    font-size: 66px;
+    font-weight: 300;
+    line-height: 0.25;
+  }
+
+  #main span {
+    font-size: 24px;
+  }
+
+  .profilePic {
+    position: relative;
+    float: right;
+  }
+
+  /* not working yet about page image */
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+}
+
+/* x-large devices (1440px or larger) */
+@media only screen and (min-width: 1440px) {
   /*  main {
       padding-top: 99px;
     }
     */
-    button#myBtn {
-      font-size: 36px;
-      padding: 18px;
-    }
+  button#myBtn {
+    font-size: 36px;
+    padding: 18px;
+  }
 
-    header {
-      padding-top: 15px;
-      padding-bottom: 15px;
-    }
+  header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 
-    .logo {
-      max-width: 350px;
-      margin-left: -100px;
-    }
+  .logo {
+    max-width: 350px;
+    margin-left: -100px;
+  }
 
-    nav {
-      margin-top: 10px;
-      margin-right: -100px;
-    }
+  nav {
+    margin-top: 10px;
+    margin-right: -100px;
+  }
 
-    nav>ul>li {
-      display: inline-block;
-      font-size: 26px;
-    }
+  nav > ul > li {
+    display: inline-block;
+    font-size: 26px;
+  }
 
-    main {
-      padding-top:100px;
-    }
+  main {
+    padding-top: 100px;
+  }
 
-    .container {
-      padding: 0 0px;
-    }
+  .container {
+    padding: none;
+  }
 
-    h1 {
+  h1 {
     font-size: 90px;
     font-weight: 300;
-    line-height: .25;
-    }
+    line-height: 0.25;
+  }
 
-    h2 {
+  h2 {
     font-size: 70px;
     font-weight: 300;
     text-align: center;
@@ -620,7 +627,7 @@ h4 {
   h3 {
     font-size: 56px;
     font-weight: 300;
-    line-height: .50;
+    line-height: 0.5;
   }
 
   h4 {
@@ -639,45 +646,44 @@ h4 {
     line-height: 1.5;
   }
 
-    span {
-      font-size: 30px;
-    }
-
-    #main h1 {
-      text-align: center;
-      font-size: 90px;
-      font-weight: 300;
-      line-height: .25;
-    }
-
-    #main span {
-      font-size: 30px;
-    }
-
+  span {
+    font-size: 30px;
   }
 
-  /* xx-large devices (1920px or larger) */
-  @media only screen and (min-width: 1920px) {
-    .logo {
-      max-width: 350px;
-      margin-left: -325px;
-    }
-
-    nav {
-      margin-top: 10px;
-      margin-right: -325px;
-    }
-
-    body {
-      font-size: 32px;
-    }
-
-    a.button {
-      padding: 20px;
-    }
-
-    button#myBtn {
-      font-size: 40px;
-      padding: 22px;
-    }
+  #main h1 {
+    text-align: center;
+    font-size: 90px;
+    font-weight: 300;
+    line-height: 0.25;
   }
+
+  #main span {
+    font-size: 30px;
+  }
+}
+
+/* xx-large devices (1920px or larger) */
+@media only screen and (min-width: 1920px) {
+  .logo {
+    max-width: 350px;
+    margin-left: -325px;
+  }
+
+  nav {
+    margin-top: 10px;
+    margin-right: -325px;
+  }
+
+  body {
+    font-size: 32px;
+  }
+
+  a.button {
+    padding: 20px;
+  }
+
+  button#myBtn {
+    font-size: 40px;
+    padding: 22px;
+  }
+}
